@@ -1,0 +1,2 @@
+1. Display name characters in console with different menthod.
+2. Print 1 to 100 Prime number.
