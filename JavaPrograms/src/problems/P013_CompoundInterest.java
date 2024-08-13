@@ -1,8 +1,10 @@
+package problems;
+
 import java.util.Scanner;
 
-public class P012_SimpleInterest {
+public class P013_CompoundInterest {
     public static void main(String[] args) {
-        System.out.println("Welcome to the simple interest calculator.");
+        System.out.println("Welcome to the simple compound calculator.");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter principal amount: ");
         double principalAmount = scanner.nextDouble();
@@ -11,7 +13,7 @@ public class P012_SimpleInterest {
         System.out.print("Enter time in year: ");
         float timeInYear = scanner.nextFloat();
 
-        double simpleInterest = (principalAmount * rateOfInterest * timeInYear) / 100;
-        System.out.println("Your simple interest is " + simpleInterest);
+        double compoundInterest = principalAmount * Math.pow((1 + rateOfInterest / 100), timeInYear);
+        System.out.println("Your compound interest is " + compoundInterest);
     }
 }

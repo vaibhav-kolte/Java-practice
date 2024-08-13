@@ -1,3 +1,5 @@
+package problems;
+
 public class P003_Pattern {
     public static void main(String[] args) {
         System.out.println("Right Half Pyramid.");

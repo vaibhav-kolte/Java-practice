@@ -1,3 +1,5 @@
+package problems;
+
 import java.util.Scanner;
 
 public class P011_AreaOfTriangle {
