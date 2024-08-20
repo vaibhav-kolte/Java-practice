@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Scanner;
 
-public class P059_SimpleCalculator {
+public class P058_SimpleCalculator {
     public static void main(String[] args) {
         System.out.println("Welcome to simple calculator.");
 

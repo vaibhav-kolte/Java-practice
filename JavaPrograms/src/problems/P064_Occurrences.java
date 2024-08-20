@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Scanner;
 
-public class P061_Occurrences {
+public class P064_Occurrences {
     public static void main(String[] args) {
         System.out.println("Number of occurrences");
 

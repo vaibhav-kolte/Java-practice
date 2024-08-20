@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Scanner;
 
-public class P058_MonthOfYear {
+public class P057_MonthOfYear {
     public static void main(String[] args) {
         System.out.println("Print month of year");
 
