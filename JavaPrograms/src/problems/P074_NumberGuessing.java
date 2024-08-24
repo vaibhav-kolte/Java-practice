@@ -2,12 +2,12 @@ package problems;
 
 import java.util.Scanner;
 
-public class P060_NumberGuessing {
+public class P074_NumberGuessing {
     public static void main(String[] args) {
         System.out.println("Welcome to number guessing game.\n");
 
         Scanner scanner = new Scanner(System.in);
-        int random = 50;
+        int random = (int) Math.floor(Math.random() * 100);
         System.out.print("Guess the number: ");
         do {
             int num = scanner.nextInt();

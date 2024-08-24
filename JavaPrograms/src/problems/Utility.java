@@ -18,6 +18,18 @@ public class Utility {
         return array;
     }
 
+    public static String[] getStringArray() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter how many string you want to enter: ");
+        int arraySize = scanner.nextInt();
+        String[] array = new String[arraySize];
+        for (int i = 0; i < arraySize; i++) {
+            System.out.print("Enter " + (i + 1) + " element: ");
+            array[i] = scanner.next();
+        }
+        return array;
+    }
+
     public static void printArray(int @NotNull [] array) {
         System.out.print("Your array is: ");
         for (int i : array) {
@@ -43,10 +55,10 @@ public class Utility {
         return array;
     }
 
-    public static void print2DArray(int[][] array){
+    public static void print2DArray(int[][] array) {
         for (int[] ints : array) {
             for (int anInt : ints) {
-                System.out.print(anInt+" ");
+                System.out.print(anInt + " ");
             }
             System.out.println();
         }
