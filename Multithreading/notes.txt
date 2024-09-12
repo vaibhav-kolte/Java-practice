@@ -1,0 +1,28 @@
+CPU
+	The CPU, often referred to as the brain of the computer, is responsible for executing instructions from programs. It performs basic arithmetic, logic, control and input/output operations specified by the instructions.
+
+Example
+	A modern CPU like the Intel Core i7 or AMD Ryzen 7
+
+What is Core?
+    A quad-core processor has four core, allowing it to perform four tasks simultaneously. For instance, one core could handle your web browser, another your music player, another a download manager, and another a background system update.
+
+What is program?
+    A program is a set of instructions written in a programming language that tells the computer how to performa specific task.
+
+    Microsoft Word is a program that allows users to create and edit documents.
+
+Process
+    A process is an instance of a program that is being executed. When a program runs, the operating system creates a process to manage its execution.
+
+    When we open Microsoft Word, it becomes a process in this operating system.
+
+Thread
+    A thread is the smallest unit of execution within a process. A Process can have multiple threads, which share the same resources but can run independently.
+
+    Example:
+        A web browser like Google Chrome might use multiple threads for different tabs, with each tab running as a separate thread.
+
+Multitasking
+    Multitasking allows an operating system to run multiple processes simultaneously. On single-core CPUs, this is done through time-sharing, rapidly switching between tasks. On multi-core CPUs, the parallel execution occures, with task distributed across core. The OS scheduler balance the load, ensuring efficient and responsive system performace.
+    
