@@ -1,7 +1,7 @@
 package src.com.java.world.practice.generics.generics_in_enum;
 
 enum Day {
-    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FIRDAY, SATURDAY
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
 }
 
 public class Test {
