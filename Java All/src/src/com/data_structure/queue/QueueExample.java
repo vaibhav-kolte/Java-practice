@@ -1,17 +1,14 @@
-package src.com.data_structure.stack;
+package src.com.data_structure.queue;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class QueueExample {
     public static void main(String[] args) {
         System.out.println("Stack Project");
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Set stack size: ");
-        int stackSize = scanner.nextInt();
-        NumberStack stack = new NumberStack(stackSize);
-
+        PersonQueue queue = new PersonQueue();
         int operation;
 
         while (true) {
@@ -34,36 +31,26 @@ public class Main {
 
             switch (operation) {
                 case 1 -> {
-                    System.out.print("Enter element: ");
-                    int element = scanner.nextInt();
-                    try {
-                        stack.push(element);
-                    } catch (StackUnderflowException e) {
-                        System.out.println("Push failed: " + e.getMessage());
-                    }
+                    System.out.print("Enter person name: ");
+                    String name = scanner.next();
+                    queue.push(name);
                 }
                 case 2 -> {
                     try {
-                        System.out.println("Pop element: " + stack.pop());
-                    } catch (EmptyStackException e) {
+                        System.out.println("Pop person: " + queue.pop());
+                    } catch (EmptyQueueException e) {
                         System.out.println("Pop failed: " + e.getMessage());
                     }
                 }
                 case 3 -> {
                     try {
-                        System.out.println("Top element: " + stack.peek());
-                    } catch (EmptyStackException e) {
+                        System.out.println("Top person: " + queue.peek());
+                    } catch (EmptyQueueException e) {
                         System.out.println(e.getMessage());
                     }
                 }
-                case 4 -> {
-                    if (stack.isEmpty()) {
-                        System.out.println("Stack is empty");
-                    } else {
-                        System.out.println("Stack is not empty");
-                    }
-                }
-                case 5 -> stack.printStack();
+                case 4 -> System.out.println("Queue is " + ((queue.isEmpty()) ? "" : "not ") + "empty");
+                case 5 -> queue.printQueue();
                 case 6 -> System.exit(0);
                 default -> System.out.println("Invalid operation.");
             }
